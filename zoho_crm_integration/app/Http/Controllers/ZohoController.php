@@ -30,7 +30,7 @@ class ZohoController extends Controller
      */
     private function saveTokens($accessToken, $refreshToken = null)
     {
-        $tokensFilePath = base_path($this->tokenFile); // Сохраняем в корень проекта
+        $tokensFilePath = base_path($this->tokenFile);
     
         $tokens = [
             'access_token' => $accessToken,
@@ -48,7 +48,7 @@ class ZohoController extends Controller
     }
 
     /**
-     * Проверяет, истек ли токен (запас 5 минут)
+     * Проверяет, истек ли токен
      */
     private function isAccessTokenExpired()
     {
