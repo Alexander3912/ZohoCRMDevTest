@@ -6,6 +6,7 @@
 /storage/*.key
 /storage/pail
 /vendor
+zoho_tokens.json
 .env
 .env.backup
 .env.production
